@@ -1,0 +1,15 @@
+/* Profile.css */
+.profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #555;
+}

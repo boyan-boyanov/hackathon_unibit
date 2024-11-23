@@ -43,7 +43,7 @@ const Header = () => {
           </button>
           <div>
             <div className="tm-brand-box">
-              <h1 className="tm-brand">ЗдравоЗемя</h1>
+              <h1 className="tm-brand">Здраво Земя</h1>
             </div>
             <ul id="tm-main-nav">
               <li className="nav-item" onClick={() => setCurrentTab("home")}>

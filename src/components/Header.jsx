@@ -97,10 +97,7 @@ const Header = () => {
             </ul>
           </div>
           <footer className="mb-3 tm-mt-100">
-            Design:{" "}
-            <a href="https://templatemo.com" target="_parent" rel="sponsored">
-              TemplateMo
-            </a>
+            Дизайн: <a>Отбор 7</a>
           </footer>
         </nav>
       </div>

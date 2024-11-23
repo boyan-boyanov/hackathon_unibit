@@ -1,54 +1,30 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Profile from "./pages/Profile";
-import "./styles/global.css";
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/magnific-popup.css";
+import "./assets/css/templatemo-upright.css";
 
-function App() {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(
-    !!sessionStorage.getItem("username")
-  );
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
+//import Footer from "./components/Footer";
+
+const App = () => {
   return (
-    <Router>
-      <Navbar isAuthenticated={isAuthenticated} setAuth={setIsAuthenticated} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/login"
-          element={
-            !isAuthenticated ? (
-              <Login setAuth={setIsAuthenticated} />
-            ) : (
-              <Navigate to="/profile" />
-            )
-          }
-        />
-        <Route
-          path="/register"
-          element={
-            !isAuthenticated ? (
-              <Register setAuth={setIsAuthenticated} />
-            ) : (
-              <Navigate to="/profile" />
-            )
-          }
-        />
-        <Route
-          path="/profile"
-          element={isAuthenticated ? <Profile /> : <Navigate to="/login" />}
-        />
-      </Routes>
-    </Router>
+    <div className="container-fluid">
+      <div className="row">
+        <Header />
+        <div className="tm-main">
+          <Home />
+          <Gallery />
+          <About />
+          <Contact />
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;

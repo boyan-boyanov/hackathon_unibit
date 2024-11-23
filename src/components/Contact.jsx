@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="tm-section-wrap">
           <img className="tm-parallax" src="/assets/img/img-04.jpg"></img>
           <div id="contact" className="tm-section">
-            <h2 className="tm-text-primary">Contact Upright</h2>
+            <h2 className="tm-text-primary">Контакт със Здраво Земя</h2>
             <hr className="mb-5" />
             <div className="row">
               <div className="col-xl-6 tm-contact-col-l mb-4">
@@ -22,7 +22,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       className="form-control rounded-0"
-                      placeholder="Name"
+                      placeholder="Име"
                       required
                     />
                   </div>
@@ -31,7 +31,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       className="form-control rounded-0"
-                      placeholder="Email"
+                      placeholder="Електронна поща"
                       required
                     />
                   </div>
@@ -41,9 +41,9 @@ const Contact = () => {
                       id="contact-select"
                       name="inquiry"
                     >
-                      <option value="-">Subject</option>
-                      <option value="sales">Sales &amp; Marketing</option>
-                      <option value="creative">Creative Design</option>
+                      <option value="-">Тема</option>
+                      <option value="sales">Продажби &amp; Реклама</option>
+                      <option value="creative">Дизайн</option>
                       <option value="uiux">UI / UX</option>
                     </select>
                   </div>
@@ -52,13 +52,13 @@ const Contact = () => {
                       rows="8"
                       name="message"
                       className="form-control rounded-0"
-                      placeholder="Message"
+                      placeholder="Съобщение"
                     ></textarea>
                   </div>
 
                   <div className="form-group tm-text-right">
                     <button type="submit" className="btn btn-primary">
-                      Send
+                      Изпрати
                     </button>
                   </div>
                 </form>
@@ -94,7 +94,7 @@ const Contact = () => {
                   <li>
                     <a href="mailto:info@company.com">
                       <i className="fas fa-at mr-2 tm-contact-link-icon"></i>
-                      Email: ourPageName@company.com
+                      Email: office@zdravozemya.com
                     </a>
                   </li>
                 </ul>

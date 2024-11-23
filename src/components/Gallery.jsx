@@ -172,7 +172,7 @@ const Gallery = () => {
                   <h2>
                     <i>{food.name}</i>
                   </h2>
-                  <a href="/assets/img/gallery/portrait-01.jpg">View more</a>
+                  <a href={`/assets/img/foods/${food.img}.jpg`}>View more</a>
                 </figcaption>
               </figure>
             ))}

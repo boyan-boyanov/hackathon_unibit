@@ -148,7 +148,10 @@ const Gallery = () => {
       return;
     }
 
-    if (answer.trim().toLowerCase() === currentFood.name.toLowerCase()) {
+    if (
+      currentFood &&
+      answer.trim().toLowerCase() === currentFood.name.toLowerCase()
+    ) {
       // Correct answer, gain EXP
       const newExp = player.exp + 100;
       const levelData = calculateLevelUp(newExp);
@@ -191,7 +194,6 @@ const Gallery = () => {
     setShowChalenge(false);
     setShowQuiz(true);
   };
-  console.log(currentFood);
 
   return (
     <>
@@ -306,7 +308,7 @@ const Gallery = () => {
             <h3>{currentChalenge.description}</h3>
             <img
               src={`/assets/img/chalenges/${currentChalenge.img}.png`}
-              alt={currentFood.name}
+              alt={currentChalenge.name}
             />
             <h5>Успя ли да завършиш предизвикателството?</h5>
             <div className="quiz-modal-buttons">

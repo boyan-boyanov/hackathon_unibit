@@ -218,7 +218,7 @@ hr {
 .tm-img-home-container {
 	width: 250px;
 	height: 500px;
-	background: url(assets/img/homepage.png) no-repeat center;
+	background: url('/assets/img/homepage.png') no-repeat center;
 	background-size: cover;
 	margin-right: 0;
 	margin-left: auto;

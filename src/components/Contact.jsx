@@ -11,12 +11,7 @@ const Contact = () => {
             <hr className="mb-5" />
             <div className="row">
               <div className="col-xl-6 tm-contact-col-l mb-4">
-                <form
-                  id="contact-form"
-                  action=""
-                  method="POST"
-                  className="tm-contact-form"
-                >
+                <form id="contact-form" action="" className="tm-contact-form">
                   <div className="form-group">
                     <input
                       type="text"
@@ -57,9 +52,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group tm-text-right">
-                    <button type="submit" className="btn btn-primary">
-                      Изпрати
-                    </button>
+                    <button className="btn btn-primary">Изпрати</button>
                   </div>
                 </form>
               </div>

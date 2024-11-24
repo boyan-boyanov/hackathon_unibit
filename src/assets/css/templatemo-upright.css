@@ -955,3 +955,16 @@ select:not([multiple]) {
 	display: flex;
 	justify-content: space-around;
 }
+
+.avatar-container {
+	width: 200px
+}
+
+.avatar-container img {
+	width: 100%
+}
+
+.player-stats {
+	display: flex;
+	justify-content: space-between;
+}

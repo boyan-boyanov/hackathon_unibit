@@ -205,13 +205,25 @@ const Gallery = () => {
 
           {/* Player Stats */}
           <div className="player-stats">
-            <h3>Статус на играча</h3>
-            <p>Ниво: {player.level}</p>
-            <p>
-              Точки опит: {player.exp} /{" "}
-              {calculateLevelUp(player.exp).nextLevelExp}
-            </p>
-            <p>Отговорени въпроси днес: {player.questionsAnswered}/10</p>
+            <div>
+              <h3>Статус на играча</h3>
+              <p>Ниво: {player.level}</p>
+              <p>
+                Точки опит: {player.exp} /{" "}
+                {calculateLevelUp(player.exp).nextLevelExp}
+              </p>
+              <p>Отговорени въпроси днес: {player.questionsAnswered}/10</p>
+            </div>
+            <div className="avatar-container">
+              <figure className="effect-honey tm-gallery-item portrait">
+                <img src={"/assets/img/avatar.png"} alt="Image" />
+                <figcaption>
+                  <h2>
+                    <i>Avatar</i>
+                  </h2>
+                </figcaption>
+              </figure>
+            </div>
           </div>
 
           <ul className="tm-gallery-links">

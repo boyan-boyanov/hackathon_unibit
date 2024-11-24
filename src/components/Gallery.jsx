@@ -108,7 +108,7 @@ const Gallery = () => {
 
   const calculateLevelUp = (exp) => {
     let level = 1;
-    let expForNextLevel = 1000;
+    let expForNextLevel = 300;
 
     while (exp >= expForNextLevel) {
       exp -= expForNextLevel;
@@ -216,7 +216,14 @@ const Gallery = () => {
             </div>
             <div className="avatar-container">
               <figure className="effect-honey tm-gallery-item portrait">
-                <img src={"/assets/img/avatar.png"} alt="Image" />
+                <img
+                  src={
+                    player.level < 2
+                      ? "/assets/img/avatar1.png"
+                      : "/assets/img/avatar2.png"
+                  }
+                  alt="Image"
+                />
                 <figcaption>
                   <h2>
                     <i>Avatar</i>
